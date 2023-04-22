@@ -40,10 +40,11 @@ class Program
 {
     static void Main()
     {
+        Game.Initialize("Fjord", 1920, 1080);
+
         SceneHandler.Register(new MainScene(1920, 1080, "Main").SetRelativeWindowSize(0, 0, 1, 1));
         SceneHandler.Load("Main");
 
-        Game.Initialize("Fjord", 1920, 1080);
         Game.Run();
     }
 }
