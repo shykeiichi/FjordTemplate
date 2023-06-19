@@ -19,14 +19,11 @@ class MainScene : Scene
         
     }
 
-    public override void Update(double dt)
+    public override void Update()
     {
         rectAngle += 10 * Game.GetDeltaTime();
-    }
 
-    public override void Render()
-    {
-        new Rectangle(new(WindowSize.w / 2, WindowSize.h / 2, 200, 200))
+        new Rectangle(new(WindowSize.X / 2, WindowSize.Y / 2, 200, 200))
             .Color(new(231, 130, 132, 255))
             .Fill(true)
             .RenderToTexture()
