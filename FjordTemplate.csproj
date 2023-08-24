@@ -7,5 +7,7 @@
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\Fjord\Fjord.csproj" />
+  </ItemGroup>
 </Project>
